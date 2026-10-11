@@ -1,0 +1,122 @@
+{
+  "kind": "real HTTP and real Ollama; no mocks",
+  "checks": {
+    "health": true,
+    "web_assets": true,
+    "missing_key": true,
+    "wrong_key": true,
+    "model_available": true,
+    "body_limit": true,
+    "context_limit": true,
+    "real_generation": true,
+    "history_used": true,
+    "history_saved": true,
+    "history_protected": true,
+    "rag_sources": false
+  },
+  "requests": [
+    {
+      "message": "Запомни код этого диалога: КЕДР-730. Ответь только словом «Запомнил».",
+      "http_status": 200,
+      "wall_seconds": 35.24,
+      "request_id": "a7fd0635-d898-4282-800c-0fe646bfeb3b",
+      "session_id": "136d49fa-2d7f-4c2f-bf86-cc8f2516355e",
+      "answer": "Запомнил",
+      "sources": [],
+      "metrics": {
+        "total_duration": 35141935900,
+        "load_duration": 11985800,
+        "prompt_eval_duration": 3499799000,
+        "eval_duration": 273553000,
+        "prompt_eval_count": 224,
+        "eval_count": 4,
+        "prompt_eval_cached_count": 0,
+        "done_reason": "stop",
+        "runtime_context_length": 8192,
+        "queue_ms": 0.0,
+        "generation_ms": 35188.0,
+        "total_ms": 35188.0,
+        "first_token_ms": 34907.0,
+        "input_tokens_budgeted": 511,
+        "output_tokens_reserved": 512,
+        "context_window": 8192,
+        "count_method": "Qwen3.5 tokenizer + 256 framing reserve + 24/message",
+        "history_messages_removed": 0,
+        "sources_removed": 0
+      }
+    },
+    {
+      "message": "Какой код я попросил запомнить? Ответь только кодом.",
+      "http_status": 200,
+      "wall_seconds": 63.093,
+      "request_id": "4dcbe99b-9cc3-488e-b948-ea5c1abcc71c",
+      "session_id": "136d49fa-2d7f-4c2f-bf86-cc8f2516355e",
+      "answer": "КЕДР-730",
+      "sources": [],
+      "metrics": {
+        "total_duration": 62988133200,
+        "load_duration": 10350600,
+        "prompt_eval_duration": 662061000,
+        "eval_duration": 713103000,
+        "prompt_eval_count": 253,
+        "eval_count": 9,
+        "prompt_eval_cached_count": 220,
+        "done_reason": "stop",
+        "runtime_context_length": 8192,
+        "queue_ms": 0.0,
+        "generation_ms": 63047.0,
+        "total_ms": 63047.0,
+        "first_token_ms": 62297.0,
+        "input_tokens_budgeted": 578,
+        "output_tokens_reserved": 512,
+        "context_window": 8192,
+        "count_method": "Qwen3.5 tokenizer + 256 framing reserve + 24/message",
+        "history_messages_removed": 0,
+        "sources_removed": 0
+      }
+    },
+    {
+      "message": "When should I use WorkManager for persistent work on Android? Answer briefly with source citations.",
+      "http_status": 500,
+      "wall_seconds": 0.055,
+      "request_id": "3f2274ff-1cb4-4c29-b9ae-c0a333c29006",
+      "error": {
+        "code": "internal_error",
+        "message": "Не удалось обработать запрос."
+      }
+    }
+  ],
+  "concurrent": [],
+  "status_before": {
+    "runtime": {
+      "available": true,
+      "model": "qwen3.5:4b",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "quantization": "Q4_K_M",
+      "loaded": true,
+      "context_length": 8192,
+      "configured_context": 8192
+    },
+    "queue": {
+      "active": 0,
+      "waiting": 0,
+      "concurrency": 1,
+      "max_waiting": 5
+    },
+    "rag": {
+      "enabled": true,
+      "available": true
+    },
+    "limits": {
+      "rate_limit": 10,
+      "rate_window_seconds": 60.0,
+      "max_body_bytes": 65536,
+      "generation_timeout_seconds": 120.0,
+      "queue_timeout_seconds": 180.0,
+      "max_output_tokens": 512,
+      "context_window": 8192,
+      "token_count_method": "Qwen3.5 tokenizer + 256 framing reserve + 24/message"
+    }
+  },
+  "elapsed_seconds": 98.729
+}

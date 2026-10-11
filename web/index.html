@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark"><title>Локально · Приватный AI</title>
+  <link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Локально — главная"><span class="brand-icon">л.</span><span>локально<span class="brand-sub">ВАШ ПРИВАТНЫЙ AI</span></span></a>
+    <div class="connection"><span class="eyebrow">ДОСТУП К СЕРВИСУ</span>
+      <form id="connect-form"><label for="api-key">API-ключ</label><div class="key-row"><input id="api-key" type="password" autocomplete="off" spellcheck="false" placeholder="Введите ваш ключ" required><button id="connect" type="submit" aria-label="Подключиться">→</button></div></form>
+      <p class="hint">Ключ хранится только в памяти этой страницы.</p>
+      <div class="model-state"><i id="status-dot"></i><span id="model-status">Введите ключ для подключения</span></div>
+    </div>
+    <button class="new-chat" id="new-chat" disabled><span>＋</span> Новый чат</button>
+    <div class="session-heading"><span class="eyebrow">ВАШИ ДИАЛОГИ</span><span id="session-count">0</span></div>
+    <nav id="sessions" aria-label="Сессии"><p class="hint">Диалоги появятся здесь</p></nav>
+    <div class="sidebar-footer"><span class="privacy-dot">●</span> Работает на вашем компьютере<br><small>День 30 · Локальная LLM</small></div>
+  </aside>
+  <main>
+    <header class="topbar"><div><span class="eyebrow">ЛИЧНОЕ ПРОСТРАНСТВО</span><h1 id="chat-title">Новый диалог</h1></div><span class="local-badge"><span>●</span> Локальная модель</span></header>
+    <div id="error" class="error" role="alert" hidden></div>
+    <section id="conversation" aria-label="История диалога" aria-live="polite"><div class="welcome"><div class="welcome-symbol">л.</div><p class="eyebrow">МЫСЛИ ОСТАЮТСЯ У ВАС</p><h2>О чём поговорим?</h2><p>Задавайте вопросы, разбирайтесь в документах<br>и возвращайтесь к своим диалогам.</p><div class="features"><span>↳ Локальная история</span><span>⌕ Ответы по документам</span></div></div></section>
+    <footer class="composer-wrap"><div class="activity" id="activity" role="status"></div><form id="chat-form" class="composer"><label class="sr-only" for="message">Сообщение</label><textarea id="message" rows="2" placeholder="Напишите сообщение…" disabled></textarea><div class="composer-bottom"><label class="rag-toggle"><input type="checkbox" id="rag" disabled><span>По документам</span><small>RAG</small></label><button id="send" type="submit" disabled>Отправить <span>↑</span></button></div></form><p class="composer-hint">Enter — отправить · Shift + Enter — новая строка. Ответы модели могут содержать ошибки.</p></footer>
+  </main>
+</body>
+</html>

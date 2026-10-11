@@ -1,0 +1,12 @@
+.env
+.venv/
+.deps/
+data/
+logs/
+*.sqlite*
+*.db
+*.log
+__pycache__/
+.pytest_cache/
+*.egg-info/
+reports/*-private.json

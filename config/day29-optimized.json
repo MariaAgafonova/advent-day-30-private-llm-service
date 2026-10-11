@@ -1,0 +1,6 @@
+{
+  "temperature": 0.0,
+  "max_output_tokens": 768,
+  "context_window_tokens": 8192,
+  "presence_penalty": 1.5
+}

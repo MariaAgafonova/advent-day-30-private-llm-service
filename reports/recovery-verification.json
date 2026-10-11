@@ -1,0 +1,79 @@
+{
+  "kind": "in-process HTTP routes with REAL Ollama transport; injected deadlines and dead TCP port",
+  "forced_timeout": {
+    "status": 504,
+    "seconds": 0.17191509999975096,
+    "request_id": "ad8e217b-4085-422e-9b1b-2d61d5c70a2e",
+    "error": {
+      "code": "generation_timeout",
+      "message": "Превышено время генерации. Сервис готов к следующему запросу."
+    }
+  },
+  "after_timeout": {
+    "status": 200,
+    "seconds": 114.70680580000044,
+    "request_id": "e8b8d1dc-ceb6-4dc1-920a-476c3533dbea",
+    "session_id": "47117a44-8224-4be3-a0ee-b18672e95fa3",
+    "answer": "ВОССТАНОВЛЕНО-30",
+    "sources": [],
+    "metrics": {
+      "total_duration": 114580549400,
+      "load_duration": 7693400,
+      "prompt_eval_duration": 3336895000,
+      "eval_duration": 882751000,
+      "prompt_eval_count": 211,
+      "eval_count": 11,
+      "prompt_eval_cached_count": 0,
+      "done_reason": "stop",
+      "runtime_context_length": 8192,
+      "queue_ms": 0.0,
+      "generation_ms": 114657.0,
+      "total_ms": 114657.0,
+      "first_token_ms": 113735.0,
+      "input_tokens_budgeted": 498,
+      "output_tokens_reserved": 512,
+      "context_window": 8192,
+      "count_method": "Qwen3.5 tokenizer + 256 framing reserve + 24/message",
+      "history_messages_removed": 0,
+      "sources_removed": 0
+    }
+  },
+  "unavailable_runtime": {
+    "status": 503,
+    "seconds": 2.0366175000017392,
+    "request_id": "fc524aea-56c0-4cfd-a294-2a14df9ef62a",
+    "error": {
+      "code": "runtime_unavailable",
+      "message": "Ollama недоступен. Проверьте локальный runtime."
+    }
+  },
+  "after_runtime_restore": {
+    "status": 200,
+    "seconds": 4.383113299998513,
+    "request_id": "11ee50fa-5617-4d45-917e-59487465feee",
+    "session_id": "adcf23cf-569e-4188-a676-f6e9eabed371",
+    "answer": "СНОВА-РАБОТАЕТ-30",
+    "sources": [],
+    "metrics": {
+      "total_duration": 4239656800,
+      "load_duration": 11705600,
+      "prompt_eval_duration": 3212082000,
+      "eval_duration": 1006516000,
+      "prompt_eval_count": 211,
+      "eval_count": 12,
+      "prompt_eval_cached_count": 0,
+      "done_reason": "stop",
+      "runtime_context_length": 8192,
+      "queue_ms": 0.0,
+      "generation_ms": 4329.0,
+      "total_ms": 4329.0,
+      "first_token_ms": 3282.0,
+      "input_tokens_budgeted": 498,
+      "output_tokens_reserved": 512,
+      "context_window": 8192,
+      "count_method": "Qwen3.5 tokenizer + 256 framing reserve + 24/message",
+      "history_messages_removed": 0,
+      "sources_removed": 0
+    }
+  }
+}

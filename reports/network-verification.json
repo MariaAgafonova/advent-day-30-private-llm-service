@@ -1,0 +1,14 @@
+{
+  "local_listener": [
+    "127.0.0.1"
+  ],
+  "local_health": "ok",
+  "runtime_listener": [
+    "127.0.0.1"
+  ],
+  "lan_listener": [
+    "0.0.0.0"
+  ],
+  "lan_health": "ok",
+  "history_after_restart": true
+}
